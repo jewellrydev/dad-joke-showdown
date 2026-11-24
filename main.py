@@ -2,10 +2,11 @@
 """Dad Joke Showdown entry: writes one dad joke to /output/entry.txt."""
 import os
 
-JOKE = (
-    "I named my dog Ten Miles, so every morning I can honestly tell "
-    "my coworkers that I walked Ten Miles before breakfast."
+JOKE_PARTS = (
+    "I named my dog Ten Miles, so I can honestly tell my coworkers",
+    "I walked Ten Miles before breakfast.",
 )
+JOKE = " ".join(JOKE_PARTS)
 
 
 def main() -> None:
